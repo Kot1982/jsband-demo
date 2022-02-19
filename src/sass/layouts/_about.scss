@@ -1,10 +1,10 @@
 .about {
-  background-color: var(#fff5f6);
+  background-color: #FFF5F6;;
   padding-top: 125px;
   background-image: url(../images/about/milk-mob-left-1х-min.png),
     url(../images/about/milk-mob-right-1x-min.png);
   background-repeat: no-repeat;
-  background-position: left top 730px, right top 740px;
+  background-position: left bottom 135px, right bottom 85px;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/about/milk-mob-left-2x-min.png),
@@ -20,7 +20,7 @@
     padding-top: 125px;
     background-image: url(../images/about/milk-desk-left-1x-min.png),
       url(../images/about/milk-desk-right-1x-min.png);
-    background-position: left top 340px, right top 400px;
+    background-position: left bottom 300px, right bottom 40px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/milk-desk-left-2x-min.png),
@@ -43,9 +43,15 @@
 
 .about__left-wrap {
   margin-bottom: 46px;
+  width: 280px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 516px;
   }
 }
 
@@ -64,14 +70,15 @@
 }
 
 .about__pre-title {
+  margin-bottom: 15px;
   font-family: Titan One;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 18px;
   line-height: 1.16;
   text-align: center;
   text-transform: uppercase;
-  color: var(#ffa5ba);
+  color: #FFA5BA;
   margin-bottom: 15px;
 
   @media screen and (min-width: 768px) {
@@ -97,7 +104,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(#d41443);
+  color: #D41443;
   min-width: 200px;
   margin-bottom: 26px;
 
@@ -120,9 +127,13 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-  color: var(#000000);
+  color: #000000;
   max-width: 220px;
   margin-bottom: 47px;
+
+  @media (min-width: 321px) and (max-width: 768px) {
+    max-width: 70vw;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -147,6 +158,10 @@
   line-height: 1.62;
   color: #907e82;
   max-width: 220px;
+
+  @media (min-width: 321px) and (max-width: 768px) {
+    max-width: 70vw;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -207,11 +222,10 @@
   line-height: 1.31;
   text-align: center;
   color: #d41443;
-}
 
-.about__read-more:hover,
-.about__read-more:focus {
-  background-color: #ecebeb;
+  &:hover, &:focus {
+    background-color: var(#ecebeb);
+  }
 }
 
 .more,
