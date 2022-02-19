@@ -1,6 +1,6 @@
 .backdrop {
   z-index: 10;
-  background-color: var(--fourth-C2E297);
+  background-color: #ffa5ba;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -68,6 +68,14 @@
 .modal__title {
   text-align: center;
   margin-top: 0;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 .form-div {
   position: relative;
@@ -76,6 +84,14 @@
 .form__label {
   display: block;
   margin-bottom: 5px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(18 / 16);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 .form__input {
@@ -91,11 +107,16 @@
   width: 100%;
   height: 40px;
   border: transparent;
-  padding-left: 30px;
+  padding-left: 15px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  line-height: calc(20 / 18);
+  letter-spacing: 0.04em;
+  color: var(--eighth992);
 }
 .form-svg {
   position: absolute;
-  top: 35px;
+  top: 32px;
   left: 10px;
   fill: var(--eighth992);
   width: 20px;
@@ -108,9 +129,22 @@
   height: 80px;
   margin-top: 15px;
   resize: none;
-  padding-left: 30px;
+  padding-left: 15px;
   font-size: 18px;
   border: transparent;
+  font-family: 'Titan One';
+  font-weight: 400;
+  line-height: calc(20 / 18);
+  letter-spacing: 0.04em;
+  color: var(--eighth992);
+}
+
+.form__aria::placeholder {
+  font-family: 'Titan One';
+  font-weight: 400;
+  line-height: calc(20 / 18);
+  letter-spacing: 0.04em;
+  color: var(--eighth992);
 }
 
 .btn {
@@ -122,21 +156,23 @@
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
-  font-family: 'DM Sans';
+  font-family: 'Titan One';
   font-weight: 400;
-  font-size: 18px;
+  line-height: calc(20 / 18);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   cursor: pointer;
-  line-height: calc(18 / 14);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #d41443;
+  color: var(--eighth992);
   transition-property: box-shadow, color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   &:hover,
   &:focus {
-    background: #c7133e;
+    background-color: var(--eighth992);
     color: #ffffff;
+    border: 2px solid var(--white);
   }
 }
