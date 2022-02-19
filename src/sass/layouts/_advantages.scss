@@ -65,11 +65,13 @@
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: #d41443;
   margin-top: 16px;
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.15;
+    text-transform: none;
     margin-top: 36px;
     margin-bottom: 14px;
   }
