@@ -24,7 +24,7 @@
 }
 .btn-mob-menu {
   padding: 0;
-
+  cursor: pointer;
   background-color: transparent;
   border: none;
 
@@ -61,9 +61,9 @@
 
   background-color: #e17992;
 
-  padding-top: 23px;
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-top: 23px;
+  // padding-left: 20px;
+  // padding-right: 20px;
 
   transform: translateX(120%);
 
@@ -86,14 +86,28 @@
 }
 
 .mobile__btn-close {
+  position: absolute;
+  top: 23px;
+  right: 28px;
   display: block;
-  margin-left: auto;
+  width: 20px;
+  height: 20px;
+
   background-color: transparent;
   border: none;
 
+  padding: 0;
+
   cursor: pointer;
 
-  margin-bottom: 23px;
+  &:hover .mobile__btn-icon,
+  &:focus .mobile__btn-icon {
+    fill: #d41443;
+  }
+}
+
+.mobile__btn-icon {
+  fill: #ffffff;
 }
 
 .header-btn {
@@ -111,25 +125,37 @@
   height: 44px;
   border-radius: 22px;
   border: none;
-  margin-bottom: 19px;
+  cursor: pointer;
+
   padding: 0;
+  display: block;
 
   @media screen and (min-width: 768px) {
     width: 160px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.header-btn-menu {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 19px;
+}
+.header-btn--text {
+  margin-right: 14px;
 }
 
 .header-btn-tab {
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
-    margin-bottom: 0;
-    margin-left: 30px;
 
-    &:hover,
-    &:focus {
-      background-color: #ecebeb;
-    }
+    margin-left: 30px;
   }
 }
 
@@ -146,8 +172,12 @@
 }
 
 .header__menu-item {
+  padding-left: 21px;
   border-bottom: 1px solid #e18298;
-  border-height: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+  }
 }
 
 .header__menu-link {
@@ -156,6 +186,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
+  text-decoration: none;
 
   color: #ffffff;
 
