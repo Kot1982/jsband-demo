@@ -38,7 +38,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--second-D41443);
+    color: #d41443;
      margin-bottom: 31px;
      @media screen and (min-width: 768px) {
       margin-bottom: 39px;
@@ -53,7 +53,7 @@
   .products-container {
     width: 100%;
     min-height: 485px;
-    background: var(--first-FFB8CA);
+    background: #ffb8ca;
   border-radius: 24px;
   padding: 161px 40px 45px 40px;
   @media screen and (min-width: 768px) {
@@ -84,7 +84,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--white);
+  color: #ffffff;
   margin-bottom: 30px;
   @media screen and (min-width: 1280px) {
     font-size: 30px;
@@ -94,7 +94,7 @@
   .products-container__title::after {
     content: "...";
     font-size: 26px;
-   color: var(--white);
+   color: #ffffff;
    display: block;
    margin-bottom: 30px;
   margin-top: 30px;
@@ -119,7 +119,7 @@
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
-  color: var(--white);
+  color: #ffffff;
   margin-bottom: 30px;
   @media screen and (min-width: 768px){
     margin-bottom: 40px;
@@ -278,7 +278,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: var(--white);
+    background-color: #ffffff;
     margin: auto;
     transition-property: color;
     transition-duration: 250ms;
