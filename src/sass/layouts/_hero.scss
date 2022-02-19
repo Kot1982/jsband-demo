@@ -159,6 +159,7 @@
 
   border-radius: 20px;
   border-color: transparent;
+  cursor: pointer;
 
   min-width: 60px;
   height: 24px;
@@ -339,4 +340,25 @@
     bottom: -56px;
     right: 115px;
   }
+}
+
+.hero-text-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.hero-text-icon {
+  fill: #d41443;
 }
