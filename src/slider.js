@@ -1,11 +1,3 @@
-<<<<<<< Updated upstream
-var swiper = new Swiper(".mySwiper", {
-  loop: true,
-  autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-=======
 // var swiper = new Swiper(".mySwiper", {
 //   loop: true,
 //   autoplay: {
@@ -25,14 +17,9 @@ var swiper = new Swiper(".mySwiper", {
           prevEl: ".swiper-button-prev",
         },
         loop: true,
->>>>>>> Stashed changes
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-<<<<<<< Updated upstream
-      });
-=======
       });
     
->>>>>>> Stashed changes
