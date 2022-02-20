@@ -86,6 +86,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   &:hover,
   &:focus {
     background-color: #d41443;
@@ -122,6 +123,7 @@
 
 .link-contact {
   color: #000000;
+  margin-right: 2px;
 }
 
 .footer-text {
