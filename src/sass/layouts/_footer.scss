@@ -5,15 +5,15 @@ footer {
 .footer__container {
   padding-left: 20px;
   padding-right: 20px;
-  @include mob {
+  @media screen and (min-width:480px) {
     padding-left: 10px;
     padding-right: 10px;
   }
-  @include tab {
+  @media screen and (min-width:768px) {
     padding-left: 17px;
     padding-right: 17px;
   }
-  @include desk {
+  @media screen and (min-width:1280px) {
     padding-left: 14px;
     padding-right: 14px;
   }
@@ -24,12 +24,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  @include tab {
+  @media screen and (min-width:768px) {
     margin-bottom: 91px;
     flex-direction: row;
     justify-content: space-between;
   }
-  @include desk {
+  @media screen and (min-width:1280px) {
     margin-bottom: 97px;
   }
 }
@@ -38,11 +38,11 @@ footer {
 .title-wrapper {
   margin-bottom: 43px;
   width: 83%;
-  @include tab {
+  @media screen and (min-width:768px) {
     margin: 0;
     width: 49%;
   }
-  @include desk {
+  @media screen and (min-width:1280px) {
     margin: 0;
     width: 45%;
   }
@@ -56,15 +56,15 @@ footer {
   line-height: 1.17;
   text-transform: uppercase;
   color: #FFA5BA;
-  @include mob {
+  @media screen and (min-width:480px) {
     font-size: 4vmin;
   }
-  @include tab {
+  @media screen and (min-width:768px) {
     margin-bottom: 16px;
     font-size: 26px;
     line-height: 1.15;
   }
-  @include desk {
+  @media screen and (min-width:1280px) {
     font-size: 30px;
     line-height: 1.13;
   }
@@ -79,14 +79,14 @@ footer {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #D41443;
-  @include mob {
+  @media screen and (min-width:480px) {
     font-size: 7vmin;
   }
-  @include tab {
+  @media screen and (min-width:768px) {
     font-size: 48px;
     line-height: 1.15;
   }
-  @include desk {
+  @media screen and (min-width:1280px) {
     font-size: 58px;
     line-height: 1.14;
   }
@@ -97,7 +97,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  @include tab {
+  @media screen and (min-width:768px) {
     margin: 0;
   }
 }
@@ -126,26 +126,26 @@ footer {
   &__text {
       margin-right: 2px;
       color:#000000;
-      @include mob {
+      @media screen and (min-width:480px) {
         font-size: 3vmin;
       }
-      @include tab {
+      @media screen and (min-width:768px) {
         font-size: 14px;
         line-height: 1.85;
       }
-      @include desk {
+      @media screen and (min-width:1280px) {
         font-size: 16px;
         line-height: 1.87;
       }
   }
-  @include mob {
+  @media screen and (min-width:480px) {
     font-size: 2vmin;
   }
-  @include tab {
+  @media screen and (min-width:768px) {
     font-size: 14px;
     line-height: 1.85;
   }
-  @include desk {
+  @media screen and (min-width:1280px) {
     font-size: 16px;
     line-height: 1.87;
   }
@@ -166,20 +166,20 @@ footer {
       font-size: 14px;
       line-height: 1.5;
       color: #907E82;
-      @include mob {
+      @media screen and (min-width:480px) {
         display: block;
         font-size: 3vmin;
       }
-      @include tab {
+      @media screen and (min-width:768px) {
         font-size: 14px;
         line-height: 1.86;
       }
   }
-  @include tab {
+  @media screen and (min-width:768px) {
     padding-top: 29px;
     padding-bottom: 18px;
   }
-  @include desk {
+  @media screen and (min-width:1280px) {
     padding-top: 9px;
     padding-bottom: 10px;
   }
