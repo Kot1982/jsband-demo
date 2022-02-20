@@ -101,10 +101,19 @@
   margin-right: 25px;
 }
 
+.footer-sotial__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .link {
   text-decoration: none;
 }
-.footer-sotial__link {
+.telegram {
+  margin-top: 2px;
+  margin-right: 3px;
+}
+.footer-sotial__links {
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 12px;
