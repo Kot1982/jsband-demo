@@ -65,7 +65,7 @@
   opacity: 0;
 
   visibility: hidden;
-  overflow: scroll;
+  overflow: auto;
 
   @media screen and (min-width: 768px) {
     width: 40vw;
@@ -167,6 +167,7 @@
   display: none;
   @media screen and (min-width: 1280px) {
     display: block;
+    margin-left: 110px;
   }
 }
 
@@ -205,8 +206,6 @@
   list-style: none;
 
   display: flex;
-
-  margin-left: 110px;
 }
 
 .header__nav-item:not(:last-child) {
