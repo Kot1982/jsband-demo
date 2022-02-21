@@ -5,13 +5,11 @@
   letter-spacing: $ls;
 }
 .contacts {
-  // padding-top: 86px;
   padding-bottom: 113px;
   background: linear-gradient(to bottom, #ffffff 5%, #fff5f6 5%);
 
   @media screen and (min-width: 768px) {
     background: linear-gradient(to bottom, #ffffff 10%, #fff5f6 10%);
-    // padding-top: 119px;
     padding-bottom: 158px;
 
     @media screen and (min-width: 1200px) {
@@ -23,9 +21,9 @@
 }
 
 .contacts-card-set {
+  width: 100%;
   @media screen and (min-width: 768px) {
     margin-left: -20px;
-    width: 100%;
     display: flex;
   }
 
@@ -35,7 +33,6 @@
 }
 
 .contacts-card-set_item {
-  min-width: 220px;
   height: auto;
   padding: 43px 20px;
   background-color: #ffffff;
@@ -45,7 +42,7 @@
   margin-right: auto;
 
   @media screen and (min-width: 480px) {
-    min-width: 260px;
+    width: 220px;
     padding: 48px 26px;
   }
 
@@ -55,7 +52,6 @@
     padding: 50px 32px;
   }
   @media screen and (min-width: 1280px) {
-    min-width: 330px;
     width: calc(100% / 3 - 31px);
     margin-left: 31px;
     padding: 52px 44px 61px 43px;
@@ -129,13 +125,17 @@
 
 .contacts-list {
   padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
 
   @media screen and (min-width: 768px) {
     padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -147,19 +147,6 @@
   }
 }
 
-.contacts-list_item:last-child {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #e1e1e1;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 30px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-bottom: 32px;
-  }
-}
-
 .contacts-list_day {
   @include font();
   color: #000000;
@@ -168,7 +155,7 @@
     @include font(500, 14px, 26px);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     @include font(500, 16px, 30px);
   }
 }
@@ -177,16 +164,12 @@
   @include font();
   color: #ffa5ba;
 
-  @media screen and (min-width: 768px) {
-    @include font(500, 14px, 26px);
+  @media screen and (min-width: 480px) {
+    @include font(500, 14px, 26px, null);
   }
 
-  @media screen and (min-width: 768px) {
-    @include font(500, 16px, 30px);
-  }
-
-  @media screen and (min-width: 768px) {
-    @include font(500, 16px, 29px);
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16px, 29px, null);
   }
 }
 
@@ -264,7 +247,7 @@
   }
 }
 
-.contacts_btn {
+.contacts-list-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,7 +291,7 @@
     background-color: #ecebeb;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 730px) {
     padding-left: 38px;
     padding-right: 38px;
   }
