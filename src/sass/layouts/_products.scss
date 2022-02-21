@@ -74,6 +74,12 @@
   
   .products-list__item:not(:last-child) {
     margin-bottom:17px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
   
   .products-container__title {
